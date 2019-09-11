@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>山东省生态环境大数据平台</title>
+    <link rel="stylesheet" href="assets/css/common/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesone-4.7/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/content.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="logo pull-left sub-logo">
+            <a href="#">
+                <h1 class="pull-left">山东省生态环境大数据平台</h1>
+                <small class="pull-left">--大气环境</small>
+            </a>
+        </div>
+        <ul class="top-head-nav pull-left clearfix ">
+            <li>
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="#">机动车及非道路移动机械环保达标监管</a>
+                <ul class="sub-nav-menu">
+                    <li>
+                        <a href="">第三方检测机构</a>
+                    </li>
+                    <li>
+                        <a href="">车型管理</a>
+
+                    </li>
+                    <li>
+                        <a href="">检测结果数据</a>
+                    </li>
+                    <li>
+                        <a href="">黑名单管理</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">挥发性有机物综合管控子系统</a>
+                <ul class="sub-nav-menu">
+                    <li>
+                        <a href="">VOCs数据填报</a>
+                    </li>
+                    <li>
+                        <a href="">VOCs数据核算</a>
+
+                    </li>
+                    <li>
+                        <a href="">VOCs数据审核</a>
+                    </li>
+                    <li>
+                        <a href="">各地区排放量与减排量信息</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">数据分析</a>
+            </li>
+            <li>
+                <a href="#">查询统计</a>
+            </li>
+        </ul>
+
+    </header>
+    <!-- 通知栏 -->
+    <div class="notice">
+        <span> 李梅，山东省生态环境大数据平台欢迎您！</span>
+        <div class="person pull-right">
+            <ul>
+                <li class="person-info">
+                    <a href="#">
+                        <i class="fa fa-user-o"></i>
+                        个人信息
+                    </a>
+                    <ul class="person-act">
+                        <li>
+                            <a href="#">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="#">找回密码</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-power-off"></i>
+                        退出
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="pre-task">
+            <!-- 代办任务 -->
+            <div class="task-con">
+                <div class="pre-task-hd">
+                    代办任务
+                </div>
+                <div class="pre-task-bd clearfix">
+                    <div class="task-con">
+                        *****机动车检测服务公司环保检验资质许可申请已提报，待审批
+                    </div>
+                    <a href="#" class="pull-right">进入>></a>
+                </div>
+            </div>
+            <!-- 通知公告 -->
+            <div class="task-con">
+                <div class="pre-task-hd">
+                    通知公告
+                </div>
+                <div class="pre-task-bd clearfix">
+                    <div class="task-con">
+                        山东省***市举办全市机动车污染防治管理暨新车环保达标核查培训会议
+                    </div>
+                    <a href="#" class="pull-right">进入>></a>
+                </div>
+            </div>
+            <!--  快捷菜单 -->
+            <div class="task-con">
+                <div class="pre-task-hd">
+                    快捷菜单
+                </div>
+                <div class="quickmenu">
+                    <div class="menu">
+                        <p>
+                            <span>机动车及非道路移动机械环保达标监管系统</span>
+                            <i class="fa fa-angle-right"></i>
+                        </p>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="">第三方检测机构</a>
+                            </li>
+                            <li>
+                                <a href="">车型管理</a>
+
+                            </li>
+                            <li>
+                                <a href="">检测结果数据</a>
+                            </li>
+                            <li>
+                                <a href="">黑名单管理</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="index-main  gasp2-index" onclick="showfakemodal();">
+        </div>
+
+    </div>
+    <!-- 点击地图区域弹出框 -->
+    <div class="fakemodal">
+        <div class="fakemodal-title">
+            <span>山东省某某污水处理厂</span>
+            <span class="faketimes" onclick="hidefakemodal();">&times;</span>
+        </div>
+        <div class="fakecon">
+            <table class="toppollution">
+                <tbody>
+                    <tr>
+                        <td>企业名称</td>
+                        <td colspan="3">山东省某某电力厂</td>
+                    </tr>
+                    <tr>
+                        <td>所属行业</td>
+                        <td colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td>污染源类别</td>
+                        <td colspan="3">污水处理厂</td>
+                    </tr>
+                    <tr>
+                        <td>控制类别</td>
+                        <td colspan="3">国控</td>
+                    </tr>
+                    <tr>
+                        <td>组织机构代码</td>
+                        <td colspan="3">2222222</td>
+
+                    </tr>
+                    <tr>
+                        <td>法人代表</td>
+                        <td colspan="3">某某</td>
+                    </tr>
+                    <tr>
+                        <td>地址</td>
+                        <td colspan="3">山东省某某</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script src="assets/js/common/jquery-1.9.1.min.js"></script>
+<script src="assets/js/common/bootstrap.min.js"></script>
+<script src="assets/js/echarts.min.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/fakemodal.js"></script>
+
+</html>

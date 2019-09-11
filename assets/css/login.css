@@ -1,0 +1,144 @@
+/* created by py */
+.login {
+    width: 100%;
+    /* min-height: 780px; */
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+}
+.login-wrap {
+    width: 34%;
+    height: 300px;
+    /* background: red; */
+    margin: 12% auto 0;
+}
+.login-title {
+    margin-bottom: 40px;
+}
+.login-title h1 {
+    color: #fff;
+    text-align: center;
+}
+.login-con {
+    width: 68%;
+    background: rgba(255,255,255,.4);
+    padding: 3%;
+    padding-top: 10%;
+    margin: 0 auto;
+    border-radius: 4px;
+    position: relative;
+}
+.login-item {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+     border-radius: 4px;
+     background-color: #fff;
+     color: #CBCCCA;
+     /* padding: 4px; */
+     margin-bottom: 10px;
+}
+.login-con .login-left {
+    width: 10%;
+    border-right: 1px solid #CBCCCA;
+    text-align: center;
+}
+.login-con .login-left i {
+    font-size: 18px;
+}
+.login-con .login-right {
+    width: 90%;
+}
+.login-con .login-right input {
+    width: 100%;
+    height: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+
+}
+.login-act {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.login-act a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    margin: 0 20px;
+}
+
+.login-act a.in {
+    width: 80%;
+    background-color: #00B5FF;
+    border-radius: 6px;
+}
+.erweima-pic {
+    position: absolute;
+    top: 50%;
+    left: 64%;
+}
+.erweima {
+    width: 70px;
+    height: 70px;
+}
+.erweima img {
+    width: 100%;
+    height: 100%;
+}
+.erweima-pic p {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 20px;
+}
+.common {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    /* margin-top: 28px; */
+   
+}
+.common span {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.forget-pass {
+     position: relative;
+}
+.password-act {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: none;
+}
+.password-act li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    
+}
+.password-act li a {
+    color: #fff;
+}
+.forget-pass:hover  .password-act {
+    display: block;
+}
+.common select {
+    width: 50%;
+    height: 32px;
+    border: 1px solid #ddd;
+}
+.common .register {
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: underline;
+    color: #fff;
+}

@@ -1,0 +1,219 @@
+/* created by py  */
+body.register-list {
+    background-color: #f1f1f1;
+}
+.lists .person {
+    margin-top: 30px;
+
+}
+.lists .person li a {
+    color: #fff;
+}
+.lists .person li .person-act {
+    background-color: #0A5BAA;
+}
+.lists .person-act li:hover a{
+    background-color: #044AA9;
+
+}
+.search-condition {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+}
+.search {
+    width: 80%;
+}
+.search table {
+    width: 100%;
+    border: 1px solid #D6D6D6;
+}
+.search table tbody td {
+    height: 34px;
+    line-height: 34px;
+    border-right: 1px solid #D6D6D6;
+    border-bottom: 1px solid #D6D6D6;
+}
+.search table tbody td.search-text {
+    background-color: #F3FBFF;
+    text-align: center;
+}
+.search table tbody td.search-choose input,
+.search table tbody td.search-choose select {
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+}
+.search table tbody td.search-in {
+    width: 25%;
+}
+.search-act {
+    margin-left: 20px;
+}
+.search-act a {
+    display: inline-block;
+    padding: 0 10px;
+    background-color: #0095E7;
+    color: #fff;
+        height: 34px;
+    line-height: 34px;
+}
+
+/* 列表 */
+.lists-con {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 20px;
+}
+.action-btns {
+    width: 80%;
+    margin-bottom: 10px;
+}
+.action-btns a {
+    display: inline-block;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff; 
+    margin-right: 10px;
+}
+.action-btns a.icon.active {
+    background-color: #FBB03B;
+}
+.return {
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #00B5FF;
+    color: #fff;
+}
+.action-btns a.icon1 {
+    background-color: #1EB4AB;
+}
+.action-btns a.icon2 {
+    background-color: #00B5FF;
+}
+.lists-title {
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    border-left: 4px solid #007BBE;
+    padding-left: 10px;
+}
+.lists-table-wrap {
+    min-height: 500px;
+    
+}
+.lists-table {
+    width: 100%;
+    border: 1px solid #F5F5F5;
+}
+.lists-table thead th {
+    height: 40px;
+    line-height: 40px;
+    background-color: #BEE2F4;
+    text-align: center;
+    color: #83969F;
+    font-weight: 400;
+    border-right: 1px solid #fff;
+}
+.lists-table tbody tr:nth-child(2n) {
+    background-color: #F9F9F9;
+}
+/* .lists-table tbody tr:nth-child(2n+1) {
+    background-color: #F9F9F9;
+} */
+.lists-table tbody td {
+    height: 36px;
+    line-height: 36px;
+    color: #787878;
+    text-align: center;
+}
+/* 审批流程--新增 */
+.add-apply-table tbody td {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.table-act {
+    width: 100%;
+    text-align: center;
+}
+.table-act .baocun {
+    display: inline-block;
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #0095E7;
+
+}
+
+/* 审批流程页面 */
+.item-check {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    position: relative;
+    margin-top: 30px;
+    padding: 30px;
+}
+.check-title {
+    position: absolute;
+    padding: 0 10px;
+    background-color: #fff;
+    top: -10px;
+    left: 10px;
+    font-size: 18px;
+}
+.check-bd {
+    width: 100%;
+}
+.check-bd span {
+    display: inline-block;
+}
+.check-progress {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.check-progress .check-dot {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #ccc;
+    color: #666;
+    border-radius: 50%;
+    font-size: 16px;
+}
+.check-progress .check-dot.current {
+    background-color: #0095E7;
+}
+.check-progress .check-arrow {
+    width: 50px;
+    text-align: center;
+
+}
+.check-progress .check-arrow i {
+    font-size: 30px;
+}
+
+/* 一企一档页面 */
+.archive-table .archive-table-text {
+    background-color: #DBF2FF;
+}
+/* 生态环境资源信息中心 */
+.product-wrap {
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    
+}
+.product-wrap img {
+    width: 100%;
+    height: 100%;
+}

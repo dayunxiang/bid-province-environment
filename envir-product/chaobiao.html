@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/common/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/font-awesone-4.7/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/lists.css" />
+    <link rel="stylesheet" href="../assets/css/modal.css" />
+
+</head>
+
+<body class="register-list">
+    <header>
+        <div class="w12 lists">
+            <div class="logo pull-left sub-logo" style="width:615px;">
+                <a href="#">
+                    <h1 class="pull-left">山东省生态环境大数据平台</h1>
+                    <small class="pull-left">--生态环境信息资源中心</small>
+                </a>
+            </div>
+            <div class="person pull-right">
+                <ul>
+                    <li class="person-info">
+                        <a href="#">
+                            <i class="fa fa-user-o"></i>
+                            个人信息
+                        </a>
+                        <ul class="person-act">
+                            <li>
+                                <a href="#">修改密码</a>
+                            </li>
+                            <li>
+                                <a href="#">找回密码</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-power-off"></i>
+                            退出
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="w12 register-padding ">
+                <!-- <div class="search-condition clearfix">
+                    <div class="search pull-left">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="search-text">受理编号</td>
+                                    <td class="search-choose ">
+                                        <input type="text" name="" value="">
+                                    </td>
+                                    <td class="search-text">申请日期</td>
+                                    <td class="search-choose">
+                                        <input type="text" name="" value="" readonly style="width:40%;">至
+                                        <input type="text" name="" value="" readonly style="width:40%;">
+                                    </td>
+                                    <td class="search-text">审批状态</td>
+                                    <td class="search-choose">
+                                        <select>
+                                            <option value="">请选择</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="search-act pull-left">
+                        <a href="#">查询</a>
+                    </div>
+                </div> -->
+                <div class="lists-con">
+                    <div class="action-btns" style="width:100%;">
+                        <a href="data-analy.html" class="icon icon1 "> 在线监测数据</a>
+                        <a href="chaobiao.html" class="icon icon2 active">实时超标数据</a>
+                        <a href="pollution.html" class="icon icon1 ">污染源定位</a>
+                        <a href="all-check.html" class="icon icon2 "> 报警综合查询</a>
+                        <a href="index.html" class="return pull-right">返回</a>
+                    </div>
+                    <!-- <div class="lists-title">
+                        <span>某某业务申请列表</span>
+                    </div> -->
+                    <div class="lists-table-wrap" style="min-height:730px;">
+                        <div class="product-wrap" data-toggle="modal" data-target="#myModal">
+                            <img src="../assets/images/data4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="width:600px;height:200px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="addusers" style="width:580px;height:300px;">
+                        <img src="../assets/images/data5.png" alt="" style="width:100%;height:auto">
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">提交更改</button>
+            </div> -->
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+</body>
+<script src="../assets/js/common/jquery-1.9.1.min.js"></script>
+<script src="../assets/js/common/bootstrap.min.js"></script>
+<script src="../assets/js/tab.js"></script>
+<script src="../assets/js/fakemodal.js"></script>
+<script>
+    // tab切换
+    $(".action-btns>a").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+        var index = $(this).index();
+        $(".product-wrap>img").attr("src", "../assets/images/product" + (index + 1) + ".png");
+
+    });
+</script>
+
+</html>

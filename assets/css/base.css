@@ -1,0 +1,145 @@
+/* created by py */
+ul,li {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.w12 {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #0A5BAA;
+    padding: 0 20px;
+}
+.logo {
+    width: 390px;
+    height: 80px;
+    
+    
+}
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.logo a h1 {
+    width: 100%;
+    height: 100%;
+    line-height: 80px;
+    color: #fff;
+    margin: 0;
+    font-size: 30px;
+}
+.top-head-nav {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+.top-head-nav>li {
+    float: left;
+    list-style: none;
+    padding: 0;
+}
+.top-head-nav li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 4px;
+}
+.person {
+    /* margin-top: 30px; */
+}
+.person>ul>li {
+    float: left;
+}
+.person li a {
+    padding: 0 10px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color:#999;
+    font-size: 16px;
+}
+
+.person .person-info {
+    position: relative;
+}
+.person-info .person-act {
+    position: absolute;
+    top: 34px;
+    left: 7px;
+    z-index:99;
+}
+.person-act {
+    background-color: #E7F2F8;
+    padding: 10px 0;
+    display: none;
+}
+.person .person-info:hover .person-act {
+    display: block;
+}
+.person-act li {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 2px;
+    text-align: center;
+}
+.person-act li:hover {
+    background-color: #fff;
+    
+}
+.person-act li:hover a {
+    color: #666;
+}
+/* 通知栏 */
+.notice {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    background-color: #E7F2F8;
+    color: #999;
+}
+
+/* 带有小标题的头部 */
+header .sub-logo {
+    width: 500px;
+}
+header .sub-logo a h1 {
+    width: 380px;
+}
+header .sub-logo a small {
+    height: 80px;
+    line-height: 90px;
+    color: #fff;
+    font-size: 20px;
+}
+header .sub-top-nav {
+    margin-left: 20px;
+}
+header .sub-top-nav li {
+    margin: 0 20px;
+}
+.sub-nav-menu li {
+    position: relative;
+}
+.sub-nav-menu {
+    position: absolute;
+    top: 70px;
+    background-color: #0A5BAA;
+    z-index: 99;
+    display: none;
+}
+header .sub-top-nav li:hover .sub-nav-menu{
+    display: block;
+}

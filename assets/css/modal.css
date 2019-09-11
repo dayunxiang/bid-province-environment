@@ -1,0 +1,51 @@
+/* created by py */
+.users-manage {
+    width: 100%;
+    height: 100%;
+}
+.users-manage img {
+    width: 100%;
+    height: 100%;
+}
+
+.fakemodal {
+    position: fixed;
+    width: 300px;
+    bottom: 30%;
+    right: 20%;
+    display: none;
+}
+.fakemodal-title {
+     position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #72B2F1;
+    text-align: center;
+   font-size: 16px;
+    color: #fff;
+}
+.fakemodal-title .faketimes {
+    font-size: 18px;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    cursor: pointer;
+}
+.fakecon {
+    width: 100%;
+    min-height: 200px;
+    background-color: #fff;
+    padding: 10px;
+}
+.toppollution {
+    width: 100%;
+}
+.toppollution tbody tr:nth-child(2n) {
+    background-color: #F1F4F9;
+}
+.toppollution tbody td {
+    height: 30px;
+    line-height: 30px;
+    border-right: 1px solid #ddd;
+}

@@ -1,0 +1,58 @@
+/* created by py  */
+header.register {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #1678BE;
+    color: #fff;
+    padding: 0 20px;
+    font-size: 18px;
+}
+.register-padding {
+    padding-bottom: 40px;
+}
+.register-table {
+    width: 100%;
+    margin: 20px auto;
+}
+.register-table .register-text {
+    color: #76BDE2;
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+}
+.register-table .register-text i {
+    color: #FF5B59;
+}
+.register-table .register-in {
+    padding-left: 1%;
+}
+.register-table .register-in input,
+.register-table .register-in select {
+    width: 90%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #EFEFEF;
+}
+.register-table .register-tip i {
+    color: #B3C2DD;
+}
+
+.register-act {
+    width: 100%;
+    text-align: center;
+}
+.register-act a {
+    display: inline-block;
+    padding: 0 20px;
+    color: #fff;
+    line-height: 34px;
+    font-size: 16px;
+    margin: 0 20px;
+}
+.register-act a.register {
+    background-color: #1678BE;
+}
+.register-act a.closed {
+    background-color: #FF5B59;
+}

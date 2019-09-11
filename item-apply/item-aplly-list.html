@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/common/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/font-awesone-4.7/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/lists.css" />
+
+</head>
+
+<body class="register-list">
+    <header>
+        <div class="w12 lists">
+            <div class="logo pull-left">
+                <a href="#">
+                    <h1>山东省生态环境大数据平台</h1>
+                </a>
+            </div>
+            <div class="person pull-right">
+                <ul>
+                    <li class="person-info">
+                        <a href="#">
+                            <i class="fa fa-user-o"></i>
+                            个人信息
+                        </a>
+                        <ul class="person-act">
+                            <li>
+                                <a href="#">修改密码</a>
+                            </li>
+                            <li>
+                                <a href="#">找回密码</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-power-off"></i>
+                            退出
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="w12 register-padding ">
+                <div class="search-condition clearfix">
+                    <div class="search pull-left">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="search-text" style="width:10%;">受理编号</td>
+                                    <td class="search-choose ">
+                                        <input type="text" name="" value="">
+                                    </td>
+                                    <td class="search-text" style="width:10%;">申请日期</td>
+                                    <td class="search-choose">
+                                        <input type="text" name="" value="" readonly style="width:40%;">至
+                                        <input type="text" name="" value="" readonly style="width:40%;">
+                                    </td>
+                                    <td class="search-text" style="width:10%;">审批状态</td>
+                                    <td class="search-choose" style="width:22%;">
+                                        <select>
+                                            <option value="">请选择</option>
+                                            <option value="">未提交</option>
+                                            <option value="">待受理</option>
+                                            <option value="">待审批</option>
+                                            <option value="">办理中</option>
+                                            <option value="">已办结</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="search-act pull-left">
+                        <a href="#">查询</a>
+                    </div>
+                </div>
+                <div class="lists-con ">
+                    <div class="clearfix">
+                        <div class="action-btns pull-left">
+                            <a href="add-apply.html" class="icon1">增加</a>
+                            <a href="item-upload.html" class="icon2">要件上传</a>
+                            <a href="#" class="icon1">删除</a>
+                            <a href="../item-check/item-check-list.html" class="icon2">提交申请</a>
+                            <a href="#" class="icon1">申请打印表格</a>
+                            <a href="#" class="icon2">表格下载</a>
+                            <a href="#" class="icon1">表格导入</a>
+                        </div>
+                        <a href="../soil/subsystem.html" class="return pull-right">返回</a>
+                    </div>
+                   
+                    <div class="lists-title">
+                        <span>某某业务申请列表</span>
+                    </div>
+                    <div class="lists-table-wrap">
+                        <table class="lists-table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox" name="" value="">
+                                    </th>
+                                    <th>序号</th>
+                                    <th>单位名称</th>
+                                    <th>污染源名称</th>
+                                    <th>联系人</th>
+                                    <th>联系电话</th>
+                                    <th>申请日期</th>
+                                    <th>申请状态</th>
+                                    <th>受理编号</th>
+                                    <th>审批结果</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" value="">
+                                    </td>
+                                    <td>1</td>
+                                    <td>济南***建设公司</td>
+                                    <td>某某建设项目</td>
+                                    <td>李妹妹</td>
+                                    <td>122018510</td>
+                                    <th>2018-5-10</th>
+                                    <td>待审批</td>
+                                    <td>201805100100</td>
+                                    <td>办理中</td>
+                                    <td>
+                                        <a href="#">申请查看</a>
+                                        <a href="see-progress.html">流程查看</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" value="">
+                                    </td>
+                                    <td>2</td>
+                                    <td>东营***石油公司</td>
+                                    <td>某某石油项目</td>
+                                    <td>李雷雷</td>
+                                    <td>183****</td>
+                                    <th>2018-5-10</th>
+                                    <td>待审批</td>
+                                    <td>201805100123</td>
+                                    <td>办理中</td>
+                                    <td>
+                                        <a href="#">申请查看</a>
+                                        <a href="see-progress.html">流程查看</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../assets/js/common/jquery-1.9.1.min.js"></script>
+<script src="../assets/js/common/bootstrap.min.js"></script>
+
+</html>

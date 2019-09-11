@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>山东省生态环境大数据平台</title>
+    <link rel="stylesheet" href="../assets/css/common/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/font-awesone-4.7/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/content.css" />
+    <link rel="stylesheet" href="../assets/css/modal.css" />
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="logo pull-left sub-logo">
+            <a href="#">
+                <h1 class="pull-left">山东省生态环境大数据平台</h1>
+                <small class="pull-left">--土壤环境综合管理系统</small>
+            </a>
+        </div>
+        <ul class="top-head-nav pull-left clearfix sub-top-nav">
+            <li>
+                <a href="../index.html">首页</a>
+            </li>
+
+            <li>
+                <a href="#">基础档案库</a>
+                <ul class="sub-nav-menu">
+                    <li>
+                        <a href="#"> 污染地块信息</a>
+                    </li>
+                    <li>
+                        <a href="#">样本采集点信息</a>
+
+                    </li>
+                    <li>
+                        <a href="#">土壤监测点信息</a>
+                    </li>
+                    <li>
+                        <a href="#">污染源基本信息</a>
+                    </li>
+                    <li>
+                        <a href="#"> 农用地信息</a>
+                    </li>
+
+                    <li>
+                        <a href="#">工矿用地信息</a>
+
+                    </li>
+                    <li style="background-color:#ccc">
+                        <a href="qiye-info.html">土壤污染企业信息</a>
+                    </li>
+                    <li>
+                        <a href="#"> 土壤污染监测及评价项目</a>
+                    </li>
+                    <li>
+                        <a href="#"> 土壤质量评价标准与方法</a>
+                    </li>
+                    <li>
+                        <a href="#"> 土壤环境质量监测/评估机构</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">综合业务库</a>
+                <ul class="sub-nav-menu">
+                    <li style="background-color:#ccc">
+                        <a href="../item-apply/item-aplly-list.html"> 土壤污染地申报/审核</a>
+                    </li>
+                    <li>
+                        <a href="#"> 样本采集 申报/审核</a>
+
+                    </li>
+                    <li>
+                        <a href="#">土壤监测信息申报/审核</a>
+                    </li>
+                    <li>
+                        <a href="#">污染源申报/审核</a>
+                    </li>
+                    <li>
+                        <a href="#"> 企业自行监测信息申报/审核</a>
+                    </li>
+
+                    <li>
+                        <a href="#">企业监督监测信息申报/审核</a>
+
+                    </li>
+                    <li>
+                        <a href="#">土壤监测自动预警阈值管理</a>
+                    </li>
+                    <li>
+                        <a href="#"> 土壤监测预警信息</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">查询分析</a>
+            </li>
+            <li>
+                <a href="#">污染应急管理</a>
+                <ul class="sub-nav-menu">
+                    <li>
+                        <a href="#">应急预案管理</a>
+                    </li>
+                    <li>
+                        <a href="#">决策动态支持</a>
+
+                    </li>
+                    <li>
+                        <a href="#">指挥协调调度</a>
+                    </li>
+                    <li>
+                        <a href="#">现场处置反馈</a>
+                    </li>
+                    <li>
+                        <a href="#">灾后评估善后</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">污染治理管理</a>
+                <ul class="sub-nav-menu">
+                    <li>
+                        <a href="#">责任主体界定</a>
+                    </li>
+                    <li>
+                        <a href="#">治理公司选择</a>
+
+                    </li>
+                    <li>
+                        <a href="#">治理方案制定</a>
+                    </li>
+                    <li>
+                        <a href="#">治理过程跟踪管理</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </header>
+    <!-- 通知栏 -->
+    <div class="notice">
+        <span> 李梅，山东省生态环境大数据平台欢迎您！</span>
+        <div class="person pull-right">
+            <ul>
+                <li class="person-info">
+                    <a href="#">
+                        <i class="fa fa-user-o"></i>
+                        个人信息
+                    </a>
+                    <ul class="person-act">
+                        <li>
+                            <a href="#">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="#">找回密码</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-power-off"></i>
+                        退出
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="pre-task">
+            <!--  快捷菜单 -->
+            <div class="task-con">
+                <!-- <div class="pre-task-hd">
+                    快捷菜单
+                </div> -->
+                <div class="quickmenu">
+                    <div class="menu">
+                        <p>
+                            <span>基础档案库</span>
+                            <i class="fa fa-angle-right"></i>
+                        </p>
+                        <ul class="sub-menu" style="display:block;">
+                            <li>
+                                <a href="#"> 污染地块信息</a>
+                            </li>
+                            <li>
+                                <a href="#">样本采集点信息</a>
+
+                            </li>
+                            <li style="background-color:#ddd;">
+                                <a href="jiancedian.html">土壤监测点信息</a>
+                            </li>
+                            <li>
+                                <a href="#"> 农用地信息</a>
+                            </li>
+
+                            <li>
+                                <a href="">工矿用地信息</a>
+
+                            </li>
+                            <li style="background-color:#ddd;">
+                                <a href="qiye-info.html">污染源信息</a>
+                            </li>
+                            <li>
+                                <a href="#"> 土壤污染监测及评价项目</a>
+                            </li>
+                            <li>
+                                <a href="#"> 土壤质量评价标准与方法</a>
+                            </li>
+                            <li>
+                                <a href="#"> 土壤环境质量监测/评估机构</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <p>
+                            <span>综合业务</span>
+                            <i class="fa fa-angle-right"></i>
+                        </p>
+                        <ul class="sub-menu">
+                            <li >
+                                <a href="#"> 土壤污染地申报/审核</a>
+                            </li>
+                            <li>
+                                <a href="#"> 样本采集 申报/审核</a>
+
+                            </li>
+                            <li>
+                                <a href="#">土壤监测信息申报/审核</a>
+                            </li>
+                            <li style="background-color:#ddd;">
+                                <a href="../item-apply/item-aplly-list.html">污染源申报/审核</a>
+                            </li>
+                            <li>
+                                <a href="#"> 企业自行监测信息申报/审核</a>
+                            </li>
+
+                            <li>
+                                <a href="#">企业监督监测信息申报/审核</a>
+
+                            </li>
+                            <li>
+                                <a href="#">土壤监测自动预警阈值管理</a>
+                            </li>
+                            <li>
+                                <a href="#"> 土壤监测预警信息</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <p>
+                            <span>污染应急管理</span>
+                            <i class="fa fa-angle-right"></i>
+                        </p>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">应急预案管理</a>
+                            </li>
+                            <li>
+                                <a href="#">决策动态支持</a>
+                        
+                            </li>
+                            <li>
+                                <a href="#">指挥协调调度</a>
+                            </li>
+                            <li>
+                                <a href="#">现场处置反馈</a>
+                            </li>
+                            <li>
+                                <a href="#">灾后评估善后</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <p>
+                            <span>污染治理管理</span>
+                            <i class="fa fa-angle-right"></i>
+                        </p>
+                        <ul class="sub-menu">
+                        <li>
+                            <a href="#">责任主体界定</a>
+                        </li>
+                        <li>
+                            <a href="#">治理公司选择</a>
+                        
+                        </li>
+                        <li>
+                            <a href="#">治理方案制定</a>
+                        </li>
+                        <li>
+                            <a href="#">治理过程跟踪管理</a>
+                        </li>
+                        </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-info-show index-left main-info-minus28" >
+            <div class="main-info-wrap">
+                <div class="mian-info-bd">
+                    <!-- 污染查询 -->
+                    <div class="pollution">
+                        <div class="pollution-con">
+                            <div class="pollution-search subsearch">
+                                <ul class="pollution-search-item">
+                                    <li>
+                                        <div class="search-group clearfix singlecol">
+                                            <div class="search-left pull-left">
+                                                关键字
+                                            </div>
+                                            <div class="search-right pull-left">
+                                                <input type="text" name="" value="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="search-action">
+                                    <button type="button">重置</button>
+                                    <button type="button">查询</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 列表 -->
+                    <div class="main-list">
+                        <ul class="pollution-search-item">
+                            <li class="clearfix">
+                                <div class="search-group clearfix secondcol pull-left">
+                                    <div class="search-left pull-left">
+                                        区域
+                                    </div>
+                                    <div class="search-right pull-left">
+                                        <select>
+                                            <option value="">全省</option>
+                                            <option value="济南市">济南市</option>
+                                            <option value="">淄博市</option>
+                                            <option value="">威海市</option>
+                                            <option value="">烟台市</option>
+                                            <option value="">青岛市</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="search-group clearfix secondcol pull-left">
+                                    <div class="search-left pull-left">
+                                        区域
+                                    </div>
+                                    <div class="search-right pull-left">
+                                        <select>
+                                            <option value="">全市</option>
+                                            <option value="">槐荫区</option>
+                                            <option value="">历下区</option>
+                                            <option value="">市中区</option>
+                                            <option value="">高新区</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search-group clearfix singlecol">
+                                    <div class="search-left pull-left">
+                                        因子
+                                    </div>
+                                    <div class="search-right pull-left">
+                                        <select>
+                                            <option value="">无机物污染因子</option>
+                                            <option value="">有机物污染因子</option>
+                                        </select>
+                                       <!--  <input type="text" name="" value="" placeholder=""> -->
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="3">类别/因子</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" value="" checked> 铅
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="" value="" checked> 汞
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="" value=""> 砷
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" value=""> 铜
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="" value=""> 锌
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="" value=""> 铬
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" value=""> 镍
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="" value=""> 铁
+                                       
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                        <div class="search-action">
+                            <button type="button">查询</button>
+                        </div>
+                    </div>
+                    <!-- <div class="copy-pic">
+                        <img src="../assets/images/soil-index.png" alt="">
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="index-main sub-main-minus58 soli-sub" onclick="showfakemodal();" >
+
+        </div>
+
+    </div>
+    <!-- 点击地图区域弹出框 -->
+    <div class="fakemodal" style="width:500px;">
+        <div class="fakemodal-title">
+            <span>聊城市**厂区环境监测站</span>
+            <span class="faketimes" onclick="hidefakemodal();">&times;</span>
+        </div>
+        <div class="fakecon">
+            <table class="toppollution">
+                <tbody>
+                    <tr>
+                        <td>监测点名称</td>
+                        <td colspan="3">聊城市**厂区环境监测站</td>
+                    </tr>
+                    <tr>
+                        <td>监测点类型</td>
+                        <td colspan="3">省控</td>
+                    </tr>
+                    <tr>
+                        <td>监测点位置</td>
+                        <td colspan="3">聊城市莘县****路***号</td>
+                    </tr>
+                    <tr>
+                        <td>地块类型</td>
+                        <td colspan="3">重污染企业用地</td>
+                    </tr>
+                    <tr>
+                        <td>联系人</td>
+                        <td colspan="3">张三</td>
+
+                    </tr>
+                    <tr>
+                        <td>联系电话</td>
+                        <td colspan="3">136******</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="toppollution">
+                <tbody>
+                    <tr>
+                        <td colspan="8">
+                            监测数据（mg/kg）
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>铅</td>
+                        <td> 汞</td>
+                        <td>砷</td>
+                        <td>铜</td>
+                        <td>锌</td>
+                        <td>铬</td>
+                        <td> 镍</td>
+                        <td>铁</td>
+                    </tr>
+                    <tr>
+                        <td>0.6</td>
+                        <td>0.004</td>
+                        <td>0.7</td>
+                        <td>1.5</td>
+                        <td>1.3</td>
+                        <td>1.5</td>
+                        <td>2.6</td>
+                        <td>0.4</td>
+                    </tr>
+                    <tr>
+                        <td>土壤pH</td>
+                        <td>有机质含量</td>
+                        <td>盐分</td>
+                        <td>六六六</td>
+                        <td>滴滴涕</td>
+                        <td>硝酸盐含量</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script src="../assets/js/common/jquery-1.9.1.min.js"></script>
+<script src="../assets/js/common/bootstrap.min.js"></script>
+<script src="../assets/js/echarts.min.js"></script>
+<script src="../assets/js/index.js"></script>
+<script src="../assets/js/fakemodal.js"></script>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>山东省生态环境大数据平台</title>
+    <link rel="stylesheet" href="../assets/css/common/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/font-awesone-4.7/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/zTree/css/zTreeStyle.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/content.css" />
+    <link rel="stylesheet" href="../assets/css/modal.css" />
+    <link rel="stylesheet" href="../assets/css/lists.css" />
+    <link rel="stylesheet" href="../assets/css/mobile-support.css" />
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="lists">
+        <div class="logo pull-left " style="width:500px;">
+            <a href="#">
+                <h1>山东省生态环境大数据移动支撑平台</h1>
+            </a>
+        </div>
+        <div class="person pull-right">
+            <ul>
+                <li class="person-info">
+                    <a href="#">
+                        <i class="fa fa-user-o"></i>
+                        个人信息
+                    </a>
+                    <ul class="person-act">
+                        <li>
+                            <a href="#">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="#">找回密码</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        <i class="fa fa-power-off"></i>
+                        退出
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="main-info-show index-left support-menu">
+            <div class="pre-task">
+                <!--  快捷菜单 -->
+                <div class="task-con">
+                    <div class="quickmenu">
+                        <div class="menu">
+                            <p>
+                                <a href="unite.html">
+                                    <span>机构管理</span>
+                                </a>
+
+                            </p>
+                        </div>
+                        <div class="menu">
+                            <p class="active">
+                                <a href="users-manage.html">
+                                    <span>用户管理</span>
+                                </a>
+
+                            </p>
+                        </div>
+                        <div class="menu">
+                            <p>
+                                <a href="role.html">
+                                    <span>角色管理</span>
+                                </a>
+
+                            </p>
+                        </div>
+                        <div class="menu">
+                            <p class="active">
+                                <a href="user-role.html">
+                                    <span>用户授权角色</span>
+                                </a>
+                        
+                            </p>
+                        </div>
+                        <div class="menu">
+                            <p>
+                                <a href="myfriend.html">
+                                    <span>我的好友</span>
+                                </a>
+
+                            </p>
+                        </div>
+                        <div class="menu">
+                            <p>
+                                <a href="contacts.html">
+                                    <span>我的通讯录</span>
+                                </a>
+
+                            </p>
+                        </div>
+                        <div class="menu">
+                            <p>
+                                <a href="notice.html">
+                                    <span>消息通知</span>
+                                </a>
+
+                            </p>
+                        </div>
+                        <div class="menu">
+                            <p>
+                                <a href="interface.html">
+                                    <span>接口管理</span>
+                                </a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="support-con-wrap">
+            <div class="support-main clearfix row">
+                <div class="support-mian-left pull-left col-sm-2">
+                    <ul class="ztree" id="uniteManage">
+                    </ul>
+                </div>
+                <div class="support-mian-right pull-left col-sm-9">
+                    <div class="support-con">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <form id="searchForm" class="form-inline" action="/jeeplus/a/sys/user/list" method="post">
+                                    <input id="pageNo" name="pageNo" type="hidden" value="1">
+                                    <input id="pageSize" name="pageSize" type="hidden" value="10">
+                                    <input id="orderBy" name="orderBy" type="hidden" value="">
+                                    <!-- 支持排序 -->
+                                    <div class="form-group">
+                                        <span>部门：</span>
+                                        <input id="companyId" name="company.id" class=" form-control input-sm" type="text" value="">
+                                        <span>姓名：</span>
+                                        <input id="loginName" name="loginName" class=" form-control input-sm" type="text" value="" maxlength="50">
+
+                                    </div>
+                                </form>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="search-con-act">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="pull-left">
+                                        <button class="btn btn-white btn-sm" data-toggle="modal" data-target="#myModal">
+                                            <i class="fa fa-plus"></i> 授权角色</button>
+
+                                    </div>
+                                    <div class="pull-right">
+                                        <button class="btn btn-primary btn-rounded btn-outline btn-sm " onclick="search()">
+                                            <i class="fa fa-search"></i> 查询</button>
+                                        <button class="btn btn-primary btn-rounded btn-outline btn-sm " onclick="reset()">
+                                            <i class="fa fa-refresh"></i> 重置</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table table-striped table-bordered table-hover table-condensed dataTables-example dataTable tree_table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox" name="" value="">
+                                    </th>
+                                    <th>登录名</th>
+                                    <th>姓名</th>
+                                    <th>电话</th>
+                                    <th>手机</th>
+                                    <th>所属单位</th>
+                                    <th>归属部门</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" value="">
+                                    </td>
+                                    <td>zhu</td>
+                                    <td>某某</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>省环保厅</td>
+                                    <td>环境影响评价处</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" value="">
+                                    </td>
+                                    <td>deng</td>
+                                    <td>某某</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>省环保厅</td>
+                                    <td>环境监测处</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" value="">
+                                    </td>
+                                    <td>pang</td>
+                                    <td>某某</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>省环保厅</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" value="">
+                                    </td>
+                                    <td>sun</td>
+                                    <td>某某</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>省环保厅</td>
+                                    <td>大气污染防治处</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="addusers" style="width:100%;height:100%;">
+                        <img src="../assets/images/user-role.png" alt="" style="width:100%;height:100%;">
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">提交更改</button>
+            </div> -->
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+</body>
+<script src="../assets/js/common/jquery-1.9.1.min.js"></script>
+<script src="../assets/js/common/bootstrap.min.js"></script>
+<script src="../assets/js/echarts.min.js"></script>
+<script src="../assets/zTree/js/jquery.ztree.core.js"></script>
+<script src="../assets/zTree/js/jquery.ztree.excheck.js"></script>
+<script src="../assets/zTree/js/jquery.ztree.exedit.js"></script>
+<script src="../assets/js/index.js"></script>
+<script src="../assets/js/support.js"></script>
+<script>
+
+</script>
+
+</html>

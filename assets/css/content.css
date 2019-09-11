@@ -1,0 +1,515 @@
+/* created by py  */
+.main-content {
+    width: 100%;
+}
+.main-info-show {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    bottom: 0;
+}
+.main-info-wrap {
+    width: 100%;
+    padding: 20px 0;
+}
+.main-info-hd {
+    width: 100%;
+    height: 30px;
+}
+.main-info-hd ul {
+    padding: 0 20px;
+}
+.main-info-hd li {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+.mian-info-bd {
+    width: 100%;
+}
+.echart {
+    width: 100%;
+}
+.echart-tab {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #F4F4F4;
+}
+.echart-tab li {
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+.echart-tab li a {
+    display: inline-block;
+    padding: 0 20px;
+    color: #333;
+}
+.echart-tab li.active a,
+.echart-tab li:hover a {
+    background-color: #2C7AC5;
+    color: #fff;
+    text-decoration: none;
+}
+.echart-container {
+    width: 100%;
+    padding: 0 20px;
+    /* background-color: #EFEFEF; */
+}
+#hour-echart {
+    width: 270px;
+    height: 220px;
+    margin: 0 auto;
+}
+.main-list {
+    width: 100%;
+    /* height: 290px; */
+    margin-top: 10px;
+    overflow: auto;
+}
+.main-list table {
+    width: 100%;
+    height: 100%;
+}
+.main-list table thead {
+    width: 100%;
+    height: 30px;
+    background-color: #F8F8F8;
+    line-height: 30px;
+}
+
+.main-list table tbody td,
+.main-list table thead th {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #EAEAEA;
+    border-right: 1px solid #EAEAEA;
+    text-align: center;
+}
+.text-blue {
+    color: #83C5E6;
+}
+.super-level {
+    color: #A1CD4D;
+}
+.senior-level {
+    color: #FFDC89;
+}
+.main-info-hd li.active {
+    color: #0D7ECE;
+}
+.pollution {
+    width: 100%;
+}
+.pollution-tab {
+    width: 100%;
+    margin-top: 10px;
+}
+.pollution-tab li {
+    position: relative;
+    float: left;
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+}
+.pollution-tab li .ptab-pic {
+    display: block;
+    width: 44px;
+    height: 48px;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+.pollution-tab li .ptab-pic.icon1 {
+    background-color: #F1AF2E;
+}
+.pollution-tab li .ptab-pic.icon2 {
+    background-color: #6974DD;
+}
+.pollution-tab li .ptab-pic.icon3 {
+    background-color: #18C391;
+}
+.pollution-tab li .ptab-pic.icon4 {
+    background-color: #F37B10;
+}
+.pollution-tab li .ptab-pic i {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 10px;
+}
+.pollution-tab li .ptab-text {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.pollution-tab li::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #B6D1EF;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -6px;
+}
+.pollution-tab li:after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #3F86D7;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    margin-left: -3px;
+    display: none;
+}
+.pollution-tab li.active:after {
+    display: block;
+}
+.pollution-con {
+    margin-top: 16px;
+}
+.pollution-title {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #72B2F1;
+    color: #fff;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.pollution-search {
+    width: 100%;
+    padding:0 0  20px 0;
+}
+.pollution-search.subsearch {
+    padding-bottom: 20px;
+}
+.pollution-search-item li {
+    width: 100%;
+    height: 30px;
+    line-height: 30%;
+}
+
+.search-group {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.pollution-search-item li {
+    margin-bottom: 10px;
+}
+.search-group.sinlecol {
+    width: 100%;
+}
+.search-group.secondcol {
+    width: 50%;
+
+}
+.search-group .search-left {
+    width: 25%;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+}
+.search-group.secondcol .search-left {
+    width: 22%;
+}
+.search-group .search-right {
+    margin-left: 10px;
+    width: 70%;
+    height: 30px;
+    line-height: 30px;
+}
+.search-group.secondcol .search-right {
+    width: 68%;
+}
+.search-group .search-right input {
+    outline: none;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 30px;
+}
+.search-group .search-right select {
+    outline: none;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 30px;
+}
+.search-action {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+.search-action button {
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0 10px;
+    background-color: #0195D3;
+    color: #fff;
+    border: none;
+}
+.floatside {
+    position: fixed;
+    top: 120px;
+    left: 360px;
+      background-color: #fff;
+}
+.floatside li {
+    width: 55px;
+    height: 28px;
+    line-height: 28px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+  
+}
+.floatside li.active,
+.floatside li:hover {
+    color: #fff;
+    background-color: #5DA6EB;
+}
+
+
+.index-left {
+    width: 360px;
+    background-color: #fff;
+    /* overflow-y: scroll; */
+}
+.index-main {
+    position: fixed;
+    top: 120px;
+    bottom:0;
+    left: 360px;
+    right: 0;
+    background: url(../images/index-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.floatnav {
+    position: fixed;
+    top: 130px;
+    right: 0;
+    background-color: rgba(83,149,194,0.4);
+    padding: 10px 20px;
+}
+.floatnav li {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #72B2F1;
+        text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.floatnav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+
+}
+.floatnav li.active,
+.floatnav li:hover {
+    background-color: #5DA6EB;
+}
+
+/* 土壤与固废代办区域 */
+.pre-task {
+    position: fixed;
+    width: 300px;
+    top: 120px;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    background-color: #0450B2;
+    overflow-y: scroll;
+    
+}
+.main-info-minus28 {
+    width: 280px;
+    left: 300px;
+
+}
+.sub-main-minus58 {
+    left: 580px;
+}
+.task-con {
+    width: 100%;
+}
+.pre-task-hd {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+.pre-task-bd {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    color: #fff;
+}
+.pre-task-bd a {
+    display: inline-block;
+    padding: 0 10px;
+    color: #fff;
+}
+.quickmenu {
+    width: 100%;
+}
+.menu p {
+    position: relative;
+    width: 100%;
+    line-height: 30px;
+    cursor: pointer;
+}
+.menu>p.active {
+    background-color: #0A5BAA;
+}
+.menu .sub-menu>li.active {
+    background-color: #0A5BAA;
+}
+.menu p span {
+    display: block;
+    width: 90%;
+    line-height: 30px;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+.menu p span::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+.menu p i {
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 7px;
+    right: 0;
+}
+.sub-menu {
+    width: 100%;
+    padding-left: 20px;
+    display: none;
+}
+.sub-menu li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 16px;
+    position: relative;
+    
+}
+.sub-menu>li.active {
+    background-color: #6974DD;
+}
+
+.sub-menu li::before {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-top: 6px solid transparent; 
+    border-left: 6px solid #fff; 
+    border-bottom: 6px solid transparent; 
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.sub-menu li a{
+    color: #fff;
+}
+.second-sub-menu {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    background-color: #6974DD;
+    z-index: 33;
+    display: none;
+}
+.second-sub-menu::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top:10px solid transparent;
+    border-right:10px solid  transparent;
+    border-bottom:10px solid #6974DD;
+    border-left:10px solid  transparent;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+}
+.sub-menu>li:first-child:hover .second-sub-menu {
+    display: block;
+}
+.copy-pic {
+    width: 100%;
+    height: 220px;
+    margin-top: 10px;
+}
+.copy-pic img {
+    width: 100%;
+}
+.soli-index {
+    background: url(../images/soil-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.soli-sub {
+    background: url(../images/soil-sub-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* 一企一档页面 */
+.archive-menu .sub-menu {
+    display: none;
+}
+/* 环境执法 */
+.environment-index {
+     background: url(../images/environment-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.environment-sub {
+     background: url(../images/sub-environment-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 水环境 */
+.water-index {
+    left: 300px;
+    background: url(../images/water.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* 大气环境 */
+.gasp-index {
+    left: 300px;
+    background: url(../images/gasp.png) no-repeat;
+    background-size: 100% 100%;
+}
+.gasp2-index {
+    left: 300px;
+    background: url(../images/gasp2.jpg) no-repeat;
+    background-size: 100% 100%;
+}

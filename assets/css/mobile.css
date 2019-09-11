@@ -1,0 +1,271 @@
+/* created by py */
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+ul,li {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.mobile-bg {
+    width: 460px;
+    height: 100%;
+    margin: 0 auto;
+    background: url(../images/phone2.png) no-repeat top center;
+    background-size: 100% 100%;
+    position: relative;
+}
+.mobile-wrap {
+     /* height: 100%; */
+    width: 426px;
+    background-color: #0450B2;
+    overflow-y: auto;
+    padding: 20px;
+    position: absolute;
+    top: 7%;
+    left: 19px;
+    right: 19px;
+    bottom: 12%;
+    border-radius: 6px;
+   
+}
+header {
+    width: 100%;
+    margin-top: 50px;
+}
+.logo h1 {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+.person>ul>li {
+    float: left;
+    margin-right: 10px;
+}
+.person li a {
+    color: #fff;
+}
+.person li a>i {
+    margin-right: 6px;
+}
+.person-act {
+    display: none;
+}
+.person-act li {
+
+}
+.main-content {
+    width: 100%;
+    margin-top: 50px;
+}
+.w70 {
+    width: 70%;
+}
+.mindex-left li {
+    float: left;
+}
+.mindex-left li {
+    width: 33%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.mindex-left li .mindex-pic {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    /* padding: 2px; */
+    text-align: center;
+}
+.mindex-left li .mindex-pic img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+.mindex-left li .mindex-text {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.w30 {
+    width: 30%;
+}
+.coress-pic {
+    width: 100%;
+    height: 300px;
+}
+.coress-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 综合查询 */
+.no-bgc {
+    background-color: #F1F1F1;
+    padding: 0;
+}
+.first-title {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    background-color: #2B6FB8;
+}
+.first-title i {
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+.mobile-notice {
+    padding: 0 20px;
+}
+.sub-titile {
+    height: 40px;
+    line-height: 40px;
+    border-left: 3px solid #2B6FB8;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.w100 {
+    width: 100%;
+}
+.all-check li .mindex-pic {
+    background-color: #0450B2;
+}
+.all-check li .mindex-text {
+    color: #212121;
+}
+
+.all-check-table {
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+.all-check-table tr td {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    height: 30px;
+    line-height: 30px;
+}
+
+/* 任务管理 */
+.task-manage-wrap {
+    width: 80%;
+    margin: 30px auto;
+}
+.task-manage-wrap .task-item {
+    margin-bottom: 20px;
+}
+.task-manage-wrap .task-item>p>a {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #00B5FF;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+}
+.task-manage-wrap .task-list {
+    width: 100%;
+    background-color: #fff;
+    display: none;
+}
+.task-manage-wrap .task-list>li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+.task-manage-wrap .task-list>li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #212121;
+    padding: 0 10px;
+    border-bottom: 1px solid #ddd;
+}
+/* 任务详情 */
+.task-detail {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    
+}
+.task-detail-table {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.task-detail-table tbody td {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    height: 30px;
+
+}
+.table-act {
+    width: 100%;
+    text-align: center;
+}
+.table-act a {
+    display: inline-block;
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #00B5FF;
+}
+
+/* 任务处理 */
+.task-title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #00B5FF;
+    padding-left: 10px;
+    color: #fff;
+    border-radius: 6px;
+}
+.task-check-table tbody tr td:first-child {
+    width: 20%;
+    line-height: 24px;
+}
+/* 定位考勤 */
+.position-title {
+    width: 100%;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+
+}
+.position-title i {
+    color: #C9612E;
+}
+/* 考核管理 */
+.task-detail-table thead th {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}

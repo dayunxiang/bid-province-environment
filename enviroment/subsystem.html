@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>山东省生态环境大数据平台</title>
+    <link rel="stylesheet" href="../assets/css/common/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/font-awesone-4.7/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/content.css" />
+    <link rel="stylesheet" href="../assets/css/modal.css" />
+    <style>
+    .floatnav-btn {
+        position: fixed;
+        bottom:15%;
+        right: 3%;
+    }
+    .floatnav-btn li {
+        float: left;
+        margin-right: 20px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        
+        background-color:#F1AF2E; 
+    }
+    .floatnav-btn li a {
+        display: block;
+        color: #fff;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="logo pull-left sub-logo">
+            <a href="#">
+                <h1 class="pull-left">山东省生态环境大数据平台</h1>
+                <small class="pull-left">--污染源基础信息动态管理系统</small>
+            </a>
+        </div>
+        <ul class="top-head-nav pull-left clearfix sub-top-nav">
+            <li>
+                <a href="../index.html">首页</a>
+            </li>
+            
+            <li>
+                <a href="#">基础档案库</a>
+                <ul class="sub-nav-menu">
+                    <li>
+                        <a href="#"> 国家重点监控企业信息</a>
+                    </li>
+                    <li>
+                        <a href="#">污染监测执行标准/执行条件</a>
+            
+                    </li>
+                    <li>
+                        <a href="#">污染源监测项目及标准</a>
+                    </li>
+                    <li>
+                        <a href="#">清洁生产审核企业信息</a>
+                    </li>
+                    <li>
+                        <a href="#"> 废弃电器电子产品处理企业信息</a>
+                    </li>
+
+                    <li>
+                        <a href="#"> 重金属污染防控重点企业信息</a>
+                    
+                    </li>
+                </ul>
+            </li>
+            <li >
+                <a href="#">核心业务</a>
+                <ul class="sub-nav-menu">
+                    <li>
+                        <a href="#">  污染源信息申报/审核管理</a>
+                    </li>
+                    <li>
+                        <a href="#"> 污染源监督监测数据申报/审核</a>
+            
+                    </li>
+                    <li>
+                        <a href="#">污染源自动监测数据管理</a>
+                    </li>
+                    <li>
+                        <a href="#"> 污染源监测数据查询分析</a>
+                    </li>
+                    <li>
+                        <a href="#"> 国控重点污染源自动监控数据超标情况</a>
+                    </li>
+            
+                    <li>
+                        <a href="#">污染源自动监控系统运行情况</a>
+            
+                    </li>
+                </ul>
+            </li>
+            <li >
+                <a href="#">监督执法</a>
+                <ul class="sub-nav-menu">
+                    <li>
+                        <a href="#">信访投诉管理</a>
+                    </li>
+                    <li>
+                        <a href="#">挂牌督办情况</a>
+
+                    </li>
+                    <li>
+                        <a href="#">移动执法团队</a>
+                    </li>
+                    <li>
+                        <a href="../mobile/index.html">任务管理</a>
+                    </li>
+                    <li>
+                        <a href="#">移动执法考核管理</a>
+                    </li>
+                    <li>
+                        <a href="#">移动执法处罚管理</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">污染防治</a>
+                <ul class="sub-nav-menu">
+                    <li>
+                        <a href="#">清洁生产审核企业管理</a>
+                    </li>
+                    <li>
+                        <a href="#">废气电器电子产品处理企业管理</a>
+            
+                    </li>
+                    <li>
+                        <a href="#">重金属 污染防控重点企业管理</a>
+                    </li>
+                </ul>
+            </li>
+            <li >
+                <a href="#">环境应急</a>
+                <ul class="sub-nav-menu">
+                    <li>
+                        <a href="#"> 突发环境应急预案</a>
+                    </li>
+                    <li>
+                        <a href="#">突发环境风险等级划分</a>
+            
+                    </li>
+                    <li>
+                        <a href="#">指挥协调调度</a>
+                    </li>
+                    <li>
+                        <a href="#">现场处置反馈</a>
+                    
+                    </li>
+                    <li>
+                        <a href="#">重大突发环境事件企业名单</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+
+    </header>
+    <!-- 通知栏 -->
+    <div class="notice">
+        <span> 李梅，山东省生态环境大数据平台欢迎您！</span>
+        <div class="person pull-right">
+            <ul>
+                <li class="person-info">
+                    <a href="#">
+                        <i class="fa fa-user-o"></i>
+                        个人信息
+                    </a>
+                    <ul class="person-act">
+                        <li>
+                            <a href="#">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="#">找回密码</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-power-off"></i>
+                        退出
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="pre-task" >
+            <!--  快捷菜单 -->
+            <div class="task-con">
+                <!-- <div class="pre-task-hd">
+                    快捷菜单
+                </div> -->
+                <div class="quickmenu">
+                    <div class="menu">
+                        <p>
+                            <span>基础档案库</span>
+                            <i class="fa fa-angle-right"></i>
+                        </p>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href=""> 国家重点监控企业信息</a>
+                                <ul class="second-sub-menu">
+                                    <li>
+                                        <a href="#"> 危险废物重点监控企业</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 规范化畜禽养殖场监控企业</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">  重金属监控企业</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">  污水处理厂监控企业</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">废气监控企业</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 废水监控企业</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">污染监测执行标准/执行条件</a>
+                        
+                            </li>
+                            <li>
+                                <a href="#">污染源监测项目及标准</a>
+                            </li>
+                            <li>
+                                <a href="#">清洁生产审核企业信息</a>
+                            </li>
+                            <li>
+                                <a href="#"> 废弃电器电子产品处理企业信息</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#"> 重金属污染防控重点企业信息</a>
+                        
+                            </li>
+                        </ul>
+                    </div> 
+                    <div class="menu">
+                        <p>
+                            <span>核心业务</span>
+                            <i class="fa fa-angle-right"></i>
+                        </p>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#"> 污染源信息申报/审核管理</a>
+                            </li>
+                            <li>
+                                <a href="#"> 污染源监督监测数据申报/审核</a>
+                        
+                            </li>
+                            <li>
+                                <a href="#">污染源自动监测数据管理</a>
+                            </li>
+                            <li>
+                                <a href="#"> 污染源监测数据查询分析</a>
+                            </li>
+                            <li class="active" style="background-color:#ccc">
+                                <a href="chaobiao.html"> 重点污染源监控数据超标情况</a>
+                            </li>
+                        
+                            <li>
+                                <a href="#">污染源自动监控系统运行情况</a>
+                        
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <p>
+                            <span>监督执法</span>
+                            <i class="fa fa-angle-right"></i>
+                        </p>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">信访投诉管理</a>
+                            </li>
+                            <li>
+                                <a href="#">挂牌督办情况</a>
+                        
+                            </li>
+                            <li>
+                                <a href="#">移动执法团队/任务管理</a>
+                            </li>
+                            <li>
+                                <a href="#">移动执法考核管理</a>
+                            </li>
+                            <li>
+                                <a href="#">移动执法处罚管理</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <p>
+                            <span>污染防治</span>
+                            <i class="fa fa-angle-right"></i>
+                        </p>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">清洁生产审核企业管理</a>
+                            </li>
+                            <li>
+                                <a href="#">废气电器电子产品处理企业管理</a>
+                        
+                            </li>
+                            <li>
+                                <a href="#">重金属 污染防控重点企业管理</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <p>
+                            <span>环境应急</span>
+                            <i class="fa fa-angle-right"></i>
+                        </p>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#"> 突发环境应急预案</a>
+                            </li>
+                            <li>
+                                <a href="#">突发环境风险等级划分</a>
+                        
+                            </li>
+                            <li>
+                                <a href="#">指挥协调调度</a>
+                            </li>
+                            <li>
+                                <a href="#">现场处置反馈</a>
+                        
+                            </li>
+                            <li>
+                                <a href="#">重大突发环境事件企业名单</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-info-show index-left main-info-minus28" >
+            <div class="main-info-wrap">
+                <div class="mian-info-bd">
+                    <!-- 污染查询 -->
+                    <div class="pollution">
+                        <!-- <a href="#" style="display:block;width:110px;margin:0 auto 20px;;padding:0 20px;text-align:center;height:40px;line-height:40px;background-color:#FFDF25;color:#999;">一企一档</a> -->
+                         <div class="pollution-tab">
+                            <ul class="clearfix">
+                                <li class="active">
+                                    <span class="ptab-pic icon1">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                    <span class="ptab-text">国控污染</span>
+                                </li>
+                                <li>
+                                    <span class="ptab-pic icon2">
+                                        <i class="fa fa-bank"></i>
+                                    </span>
+                                    <span class="ptab-text">省控污染</span>
+                                </li>
+                                <li>
+                                    <span class="ptab-pic icon3">
+                                        <i class="fa fa-building"></i>
+                                    </span>
+                                    <span class="ptab-text">市控污染</span>
+                                </li>
+                                <li>
+                                    <span class="ptab-pic icon4">
+                                        <i class="fa fa-gear"></i>
+                                    </span>
+                                    <span class="ptab-text">区县控污染</span>
+                                </li>
+                            </ul>
+                        </div> 
+                        <div class="pollution-con">
+                            <div class="pollution-search subsearch">
+                                <ul class="pollution-search-item">  
+                                    <li>
+                                        <div class="search-group clearfix singlecol">
+                                            <div class="search-left pull-left">
+                                                关键字
+                                            </div>
+                                            <div class="search-right pull-left">
+                                                <input type="text" name="" value="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="search-action">
+                                    <button type="button">重置</button>
+                                    <button type="button">查询</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="pollution-con">
+                    <div class="pollution-title">
+                        污染源
+                    </div>
+                    <div class="pollution-search">
+                        <div class="search-group clearfix">
+                            <div class="search-left pull-left">
+                                名称
+                            </div>
+                            <div class="search-right pull-left">
+                                <input type="text" name="" value="">
+                            </div>
+                        </div>
+                        <div class="search-group clearfix">
+                            <div class="search-left pull-left">
+                                区域
+                            </div>
+                            <div class="search-right pull-left">
+                                <select>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="search-action">
+                            <button type="button">重置</button>
+                            <button type="button">查询</button>
+                        </div>
+                    </div>
+                </div>
+                    <!-- <div class="copy-pic">
+                        <img src="../assets/images/soil-index.png" alt="">
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="index-main sub-main-minus58 environment-index" onclick="showfakemodal();" >
+            <div class="floatnav-btn" >
+                <ul>
+                    <li >
+                        <a href="../archive/baseinfo.html">一企一档</a>
+                    </li>
+                    <li>
+                        <a href="../mobile/index.html">任务管理</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+     <!-- ../archive/baseinfo.html -->
+    <!-- 点击地图区域弹出框 -->
+    <div class="fakemodal" style="width:500px;">
+        <div class="fakemodal-title">
+            <span>山东省某某绿能环保发电有限公司</span>
+            <span class="faketimes" onclick="hidefakemodal();">&times;</span>
+        </div>
+        <div class="fakecon" style="height:280px;overflow:scroll;">
+            <table class="toppollution">
+                <tbody>
+                    <tr>
+                        <td>企业名称</td>
+                        <td colspan="3">
+                            <a href="../archive/baseinfo.html">山东省某某绿能环保发电有限公司</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>排污口名称</td>
+                        <td>标排口</td>
+                        <td>排污口种类</td>
+                        <td>直排口</td>
+                    </tr>
+                    <tr>
+                        <td>经度</td>
+                        <td>119.980873</td>
+                        <td>纬度</td>
+                        <td>30.03290</td>
+                    </tr>
+                    <tr>
+                        <td>所属流域</td>
+                        <td></td>
+                        <td>排污去向</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>排放规律</td>
+                        <td>稳定连续排放</td>
+                        <td>上年度流量</td>
+                        <td>30.03290吨</td>
+                    </tr>
+                    <tr>
+                        <td>生产工艺</td>
+                        <td colspan="3">进水-及物化处理-曝气-二级沉淀-排放</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="toppollution">
+                <thead>
+                    <tr>
+                        <th>排放因子</th>
+                        <th>排放标准</th>
+                        <th>排放限值</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>总氮（以N计）</td>
+                        <td>制浆造纸工业水污染排放标准->表3水污染物特别排放限制->制浆和造纸联合生产企业</td>
+                        <td>
+                            <=10mg/L</td>
+                    </tr>
+                    <tr>
+                        <td>总磷（以P计）</td>
+                        <td>制浆造纸工业水污染排放标准->表3水污染物特别排放限制->制浆和造纸联合生产企业</td>
+                        <td>
+                            <=0.5mg/L</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script src="../assets/js/common/jquery-1.9.1.min.js"></script>
+<script src="../assets/js/common/bootstrap.min.js"></script>
+<script src="../assets/js/echarts.min.js"></script>
+<script src="../assets/js/index.js"></script>
+<script src="../assets/js/fakemodal.js"></script>
+<script src="../assets/js/tab.js"></script>
+
+</html>

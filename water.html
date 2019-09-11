@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>山东省生态环境大数据平台</title>
+    <link rel="stylesheet" href="assets/css/common/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesone-4.7/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/content.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="logo pull-left sub-logo">
+            <a href="#">
+                <h1 class="pull-left">山东省生态环境大数据平台</h1>
+                <small class="pull-left">--水环境</small>
+            </a>
+        </div>
+        <ul class="top-head-nav pull-left clearfix ">
+            <li>
+                <a href="index.html">首页</a>
+            </li>
+            <li >
+                <a href="#">河流断面分布GIS</a>
+            </li>
+            <li>
+                <a href="#">水污染源监管GIS</a>
+            </li>
+            <li>
+                <a href="#">废水排口分布GIS</a>
+            </li>
+            <li>
+                <a href="#">饮用水水源地保护</a>
+                <ul class="sub-nav-menu">
+                    <li>
+                        <a href="">水源地保护区区划管理</a>
+                    </li>
+                    <li>
+                        <a href="">饮用水水源地监测点位信息管理</a>
+
+                    </li>
+                    <li>
+                        <a href="">饮用水水源地监测数据汇总统计</a>
+                    </li>
+                    <li>
+                        <a href="">饮用水水源地水质状况管理</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">水质预警及动态调控</a>
+            </li>
+            <li>
+                <a href="#">查询统计</a>
+            </li>
+        </ul>
+
+    </header>
+    <!-- 通知栏 -->
+    <div class="notice">
+        <span> 李梅，山东省生态环境大数据平台欢迎您！</span>
+        <div class="person pull-right">
+            <ul>
+                <li class="person-info">
+                    <a href="#">
+                        <i class="fa fa-user-o"></i>
+                        个人信息
+                    </a>
+                    <ul class="person-act">
+                        <li>
+                            <a href="#">修改密码</a>
+                        </li>
+                        <li>
+                            <a href="#">找回密码</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-power-off"></i>
+                        退出
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+       
+        <div class="index-main  water-index" onclick="showfakemodal();" style="left:0;">
+        </div>
+
+    </div>
+    <!-- 点击地图区域弹出框 -->
+    <div class="fakemodal">
+        <div class="fakemodal-title">
+            <span>山东省某某污水处理厂</span>
+            <span class="faketimes" onclick="hidefakemodal();">&times;</span>
+        </div>
+        <div class="fakecon">
+            <table class="toppollution">
+                <tbody>
+                    <tr>
+                        <td>企业名称</td>
+                        <td colspan="3">山东省某某污水处理厂</td>
+                    </tr>
+                    <tr>
+                        <td>所属行业</td>
+                        <td colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td>污染源类别</td>
+                        <td colspan="3">污水处理厂</td>
+                    </tr>
+                    <tr>
+                        <td>控制类别</td>
+                        <td colspan="3">国控</td>
+                    </tr>
+                    <tr>
+                        <td>组织机构代码</td>
+                        <td colspan="3">2222222</td>
+
+                    </tr>
+                    <tr>
+                        <td>法人代表</td>
+                        <td colspan="3">某某</td>
+                    </tr>
+                    <tr>
+                        <td>地址</td>
+                        <td colspan="3">山东省某某</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script src="assets/js/common/jquery-1.9.1.min.js"></script>
+<script src="assets/js/common/bootstrap.min.js"></script>
+<script src="assets/js/echarts.min.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/fakemodal.js"></script>
+
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>山东省生态环境大数据平台</title>
+    <link rel="stylesheet" href="assets/css/common/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/font-awesone-4.7/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/base.css"/>
+    <link rel="stylesheet" href="assets/css/content.css"/>
+    <link rel="stylesheet" href="assets/css/modal.css"/>
+</head>
+<body>
+	<!-- 头部 -->
+<header>
+	<div class="logo pull-left">
+		<a href="#">
+			<h1>山东省生态环境大数据平台</h1>
+		</a>
+	</div>
+	<ul class="top-head-nav pull-left clearfix">
+		<li>
+			<a href="index.html">首页</a>
+		</li>
+		<li>
+			<a href="soil/index.html">土壤与固废</a>
+		</li>
+		<li>
+			<a href="enviroment/index.html">环境监管执法</a>
+		</li>
+		<li>
+			<a href="envir-product/index.html">生态环境信息资源中心</a>
+		</li>
+		<li>
+			<a href="mobile-support/unite.html">移动支撑</a>
+		</li>
+		<li>
+			<a href="water.html">水环境</a>
+		</li>
+		<li>
+			<a href="gasp.html">大气环境</a>
+		</li>
+		
+		<li>
+			<a href="#">核与辐射环境</a>
+		</li>
+		
+		<li>
+			<a href="#">环境影响评价</a>
+		</li>
+		
+		<li>
+			<a href="#">系统管理</a>
+		</li>
+	</ul>
+	
+</header>
+<!-- 通知栏 -->
+<div class="notice">
+	<span> 李梅，山东省生态环境大数据平台欢迎您！</span>
+	<div class="person pull-right">
+		<ul>
+			<li class="person-info">
+				<a href="#">
+					<i class="fa fa-user-o"></i>
+					个人信息
+				</a>
+				<ul class="person-act">
+					<li>
+						<a href="#">修改密码</a>
+					</li>
+					<li>
+						<a href="#">找回密码</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="login/login.html">
+					<i class="fa fa-power-off"></i>
+					退出
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="main-content">
+	<div class="main-info-show index-left"  style="overflow:auto;">
+		<div class="main-info-wrap" >
+			<div class="main-info-hd">
+				<ul class="clearfix">
+					<li class="active">城市</li>
+					<li>监测点</li>
+				</ul>
+			</div>
+			<div class="mian-info-bd">
+				<!-- 图表 -->
+				<div class="echart">
+					<div class="echart-tab">
+						<ul>
+							<li class="active">
+								<a href="#">小时报</a>
+								</li>
+							<li>
+								<a href="">日报</a>
+								</li>
+							<li>
+								<a href="">预报</a>
+								</li>
+						</ul>
+					</div>
+					<div class="echart-container">
+						<div id="hour-echart">
+							
+						</div>
+					</div>
+				</div>
+				<!-- 列表 -->
+				<div class="main-list">
+					<table>
+						<thead>
+							<tr>
+								<th>山东省排名</th>
+								<th>城市</th>
+								<th>空气质量指数</th>
+								<th>质量状况</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td class="text-blue">临沂市</td>
+								<td>47</td>
+								<td class="super-level">优</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td class="text-blue">日照市</td>
+								<td>47</td>
+								<td class="super-level">优</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td class="text-blue">青岛市</td>
+								<td>53</td>
+								<td class="senior-level">良</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td class="text-blue">威海市</td>
+								<td>53</td>
+								<td class="senior-level">良</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- 污染查询 -->
+				<div class="pollution">
+					<div class="pollution-tab">
+						<ul class="clearfix">
+							<li class="active">
+								<span class="ptab-pic icon1">
+									<i class="fa fa-calendar"></i>
+								</span>
+								<span class="ptab-text">国控污染</span>
+							</li>
+							<li>
+								<span class="ptab-pic icon2">
+									<i class="fa fa-bank"></i>
+								</span>
+								<span class="ptab-text">省控污染</span>
+							</li>
+							<li>
+								<span class="ptab-pic icon3">
+									<i class="fa fa-building"></i>
+								</span>
+								<span class="ptab-text">市控污染</span>
+							</li>
+							<li>
+								<span class="ptab-pic icon4">
+									<i class="fa fa-gear"></i>
+								</span>
+								<span class="ptab-text">区县控污染</span>
+							</li>
+						</ul>
+					</div>
+					<div class="pollution-con">
+						<div class="pollution-title">
+							污染源
+						</div>
+						<div class="pollution-search">
+							<div class="search-group clearfix">
+								<div class="search-left pull-left">
+									名称
+								</div>
+								<div class="search-right pull-left">
+									<input type="text" name="" value="">
+								</div>
+							</div>
+							<div class="search-group clearfix">
+								<div class="search-left pull-left">
+									区域
+								</div>
+								<div class="search-right pull-left">
+									<select>
+										<option value=""></option>
+									</select>
+								</div>
+							</div>
+							<div class="search-action">
+								<button type="button">重置</button>
+								<button type="button">查询</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="index-main " onclick="showfakemodal();">
+		<div class="floatside">
+			<ul>
+				<li class="active">AQI</li>
+				<li>PM2.5</li>
+				<li>PM10</li>
+				<li>SO2</li>
+				<li>NO2</li>
+				<li>CO</li>
+				<li>O2</li>
+			</ul>
+		</div>
+		<div class="floatnav">
+			<ul>
+				<li class="active">
+					<a href="#">空气质量</a>
+				</li>
+				<li>
+					<a href="#">水质情况</a>
+				</li>
+				<li onclick="showwater(this);">
+					废水污染源
+				</li>
+				<li>
+					<a href="#">废水排放口</a>
+				</li>
+				
+				<li>
+					<a href="envir-product/index.html">废气污染源</a>
+				</li>
+				<li>
+					<a href="#">废气排放口</a>
+				</li>
+				<li>
+					<a href="#">土壤污染</a>
+				</li>
+				<li>
+					<a href="#">生态红线</a>
+				</li>
+				<li>
+					<a href="#">畜禽养殖</a>
+				</li>
+				<li>
+					<a href="#">有机食品基地</a>
+				</li>
+				<li>
+					<a href="#">核与辐射</a>
+				</li>
+				<li>
+					<a href="#">天气情况</a>
+				</li>
+
+
+			</ul>
+		</div>
+	</div>
+	
+</div>
+<!-- 点击地图区域弹出框 -->
+<div class="fakemodal">
+	<div class="fakemodal-title">
+		<span>首要污染物</span>
+		<span class="faketimes" onclick="hidefakemodal();">&times;</span>
+	</div>
+	<div class="fakecon">
+		<table class="toppollution">
+			<tbody>
+				<tr>
+					<td>城市</td>
+					<td colspan="3">淄博市</td>
+				</tr>
+				<tr>
+					<td>时间</td>
+					<td colspan="3">2018/5/10 10:00:00</td>
+				</tr>
+				<tr>
+					<td>PM2.5</td>
+					<td>9 ug/m3</td>
+					<td>PM10</td>
+					<td>9 ug/m3</td>
+				</tr>
+				<tr>
+					<td>SO2</td>
+					<td>9 ug/m3</td>
+					<td>NO2</td>
+					<td>9 ug/m3</td>
+				</tr>
+				<tr>
+					<td>CO</td>
+					<td>9 ug/m3</td>
+					<td>O3</td>
+					<td>9 ug/m3</td>
+				</tr>
+				<tr>
+					<td>AQI</td>
+					<td colspan="3">9 ug/m3</td>
+					
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+</body>
+<script src="assets/js/common/jquery-1.9.1.min.js"></script>
+<script src="assets/js/common/bootstrap.min.js"></script>
+<script src="assets/js/echarts.min.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/fakemodal.js"></script>
+<script src="assets/js/tab.js"></script>
+<script>
+	function showwater(obj) {
+		var url="assets/images/water.png";
+		$(obj).addClass("active").siblings().removeClass("active");
+		$(".index-main ").css({
+			"background":"url("+url+") no-repeat",
+			"background-size":"100% 100%"
+			});
+		$(".main-info-hd").hide();
+		$(".mian-info-bd>.echart").hide();
+		$(".mian-info-bd>.main-list").hide();
+		$(".floatside").hide();
+		cancelBubble();
+	}
+	function cancelBubble(e) {
+		 var evt = e ? e : window.event; 
+		   if (evt.stopPropagation) {
+			     evt.stopPropagation(); 
+				  } else {  
+					   evt.cancelBubble = true; 
+					     }  
+						 }
+</script>
+</html>
